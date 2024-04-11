@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS-B Flight Data | Home</title>
+    <title>Flights Nearby</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+  <header id="main-header"></header>
+  <main>
+
+    <h1>ADS-B Data from Open Sky Network</h1>
+    <h2>Locations</h2>
+    <p>Please select the location for which you would like to display nearby flights.</p>
+
+
+<!-- locations were products, and area was category-->
+    <section class="locations">
+      <ul class="location-grid">
+        <li>
+          <a href="locations/index.html?area=Denver"
+            ><img
+              src="images/areas/denver.png"
+              alt="map of denver area"
+            />
+            <h2>Denver</h2>
+          </a>
+        </li>
+        <li>
+          <a href="locations/index.html?area=Houston"
+            ><img
+              src="images/areas/houston.png"
+              alt="map of houston area"
+            />
+            <h2>Houston</h2>
+          </a>
+        </li>
+        <li>
+          <a href="locations/index.html?area=Phoenix"
+            ><img
+              src="images/areas/phoenix.png"
+              alt="map of phoenix area"
+            />
+            <h2>Phoenix</h2>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+
+
+    <div>
+      <img id="locationImage" src="" alt="image of one of three areas of data">
+      
+    </div>
+    <!-- <div id="demo"></div> -->
+<img src="https://loremflickr.com/320/240/denver" alt="test output">
+<img src="images/tooManyRequests.png" alt="a message from my API, gotta wait till tomorrow, too many requests">
+    <br>
+<table id="flights"></table>
+
+</main>
+<footer id="main-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid;
+  }
+  img{
+    max-width: 200px;
+  }
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    
+  }

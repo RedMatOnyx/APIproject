@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <h1>try code out here</h1>
+    <hr>
+    <button id="button1id" type="button" value="Clicked" onclick="document.getElementById('button1id').innerHTML = this.value;">Click</button>
+    <!-- doit(this.value) -->
+    <br>
+    <button type="button" value="" onclick="document.getElementById('button1id').innerHTML = 'Click';">Reset</button>
+
+<div id="demo"></div>
+<div id="demo1"></div>
+<div id="placeholder"></div>
+    <script>
+        function doit(val){
+  console.log(val);
+// document.getElementById("demo").innerHTML = val;
+// document.getElementById("demo1").innerHTML = "another value";
+// document.getElementById("makeitso").innerHTML = "new button";
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+}
+    </script>
+</body>
+</html>
